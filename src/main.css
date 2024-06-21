@@ -32,7 +32,7 @@ h1 {
   padding: 10%;
   box-sizing: border-box;
   align-items: center;
-  background: no-repeat center/cover url("./public/constellation.jpg");
+  background: no-repeat center/cover url("/constellation.jpg");
 }
 
 .container.open {

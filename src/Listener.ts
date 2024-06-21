@@ -14,7 +14,7 @@ export class Listener {
       ;(e.target as HTMLElement).style.opacity = '0.2'
       //设置拖拽缩略图
       let image = new Image()
-      image.src = './public/hold.svg'
+      image.src = '/hold.svg'
       if (e.dataTransfer) {
         e.dataTransfer.dropEffect = 'move'
         e.dataTransfer.setDragImage(image, 50, 120)

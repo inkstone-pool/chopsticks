@@ -16,7 +16,7 @@ export class Renderer {
       liDom.setAttribute('id', index.toString())
       liDom.classList.add(cell.value === 1 ? 'normal' : 'success')
       liDom.innerHTML = `<img src="${
-        cell.value === 1 ? './public/single.svg' : './public/double.svg'
+        cell.value === 1 ? '/single.svg' : '/double.svg'
       }" 
             width="${cell.value === 1 ? '60%' : '100%'}" height='60%' 
             >`
@@ -27,7 +27,7 @@ export class Renderer {
     const divDom = document.createElement('div')
     divDom.className = 'successover'
     divDom.innerHTML = `
-        <img src="./public/success.svg" draggable="false" alt="">
+        <img src="/success.svg" draggable="false" alt="">
         <span>Keep think and keep Keen</span>`
     divDom.style.display = 'flex'
     document.querySelector('body')!.appendChild(divDom)
